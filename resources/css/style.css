@@ -3,6 +3,7 @@
 html {
   font-size: 18px;
   font-family: Helvetica, sans-serif;
+  color: white;
 }
 
 .container {
@@ -30,8 +31,28 @@ header img {
 }
 
 header span {
-  color: white;
   margin: 0.66rem 0;
 }
 
 /*** Headline Section ***/
+
+.main-banner {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0.25rem;
+}
+
+.headline {
+  margin-top: 9rem;
+  width: 20rem;
+  background-color: black;
+  padding: 2rem 3rem;
+  pad
+}
