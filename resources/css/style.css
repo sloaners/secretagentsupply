@@ -9,8 +9,6 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -26,10 +24,15 @@ header {
   align-items: center;
 }
 
+header .container {
+  display: flex;
+  align-items: center;
+}
 header img {
   height: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 1rem;
+
 }
 
 header span {
@@ -46,9 +49,14 @@ header span {
   font-weight: bold;
 }
 
+.main-banner .container {
+  display: flex;
+  align-items: center;
+}
+
 h1 {
   font-size: 2rem;
-  margin-top: 0.25rem;
+  padding-top: 0.25rem;
 }
 
 .headline {
@@ -56,8 +64,29 @@ h1 {
   width: 20rem;
   background-color: black;
   padding: 2rem 3rem;
-  pad
 }
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+    display: block;
+  }
+
+  .headline {
+    margin-top: 10rem;
+    flex-grow: 1;
+    padding: 1rem 2rem;
+  }
+
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+}
+
 
 /*** Navigation Bar ***/
 
@@ -99,13 +128,9 @@ nav a {
   margin: 3rem auto;
   justify-content: space-between;
   display: flex;
-  flex-grow: 1;
 }
 
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   color: black;
   width: 30%;
 }
@@ -135,16 +160,6 @@ nav a {
 
 .product-text h3 {
   padding: 0.5rem 0;
-}
-
-@@media only screen and (max-width: 1024px) {
-  .product {
-    width: 47%;
-  }
-
-  .product.glasses {
-    display: none;
-  }
 }
 
 .product-info {
@@ -180,6 +195,32 @@ nav a {
 
 .pro-info-text {
   color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .products,
+  .product-info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .watch {
+    display: none;
+  }
 }
 
 /*** Footer Section ***/
