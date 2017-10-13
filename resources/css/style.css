@@ -1,6 +1,6 @@
 /*** General Declarations ***/
 
-html {
+body {
   font-size: 18px;
   font-family: Helvetica, sans-serif;
   color: white;
@@ -11,6 +11,12 @@ html {
   margin: 0 auto;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 /*** Header Section ***/
@@ -64,10 +70,7 @@ nav ul {
   justify-content: space-between;
   list-style: none;
   align-items: center;
-}
-
-nav li {
-  margin: 0.75em 0;
+  padding: 0.75rem 0;
 }
 
 nav a {
@@ -75,11 +78,25 @@ nav a {
   color: white;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  ul.container {
+    display: none;
+  }
+
+  ul.mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
 /*** Product Section ***/
 
 .products {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin: 3rem auto;
   justify-content: space-between;
   display: flex;
   flex-grow: 1;
@@ -119,3 +136,53 @@ nav a {
 .product-text h3 {
   padding: 0.5rem 0;
 }
+
+.product-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 35%;
+
+}
+
+.hours {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 35%;
+
+}
+.pro-info-head {
+  background-color: black;
+}
+
+.pro-info-head h3 {
+  margin: 1rem 2rem;
+}
+
+.pro-info-text {
+  color: black;
+}
+
+/*** Footer Section ***/
+
+footer {
+  background-color: black;
+
+}
+
+.copyright {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+}
+
+/*** Media Queries ***/
