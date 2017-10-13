@@ -137,6 +137,16 @@ nav a {
   padding: 0.5rem 0;
 }
 
+@@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+}
+
 .product-info {
   display: flex;
   align-items: center;
