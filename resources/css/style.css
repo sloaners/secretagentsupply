@@ -221,6 +221,16 @@ nav a {
   .watch {
     display: none;
   }
+
+  .location,
+  .hours {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .product-info {
+    justify-content: center;
+  }
 }
 
 /*** Footer Section ***/
@@ -236,4 +246,8 @@ footer {
   align-items: center;
 }
 
-/*** Media Queries ***/
+@media only screen and (max-width:470px) {
+  .copyright {
+    justify-content: center;
+  }
+}
