@@ -13,10 +13,6 @@ html {
   align-items: center;
 }
 
-.flex-container {
-  display: flex;
-}
-
 /*** Header Section ***/
 
 header {
@@ -34,7 +30,7 @@ header span {
   margin: 0.66rem 0;
 }
 
-/*** Headline Section ***/
+/*** main-banner Section ***/
 
 .main-banner {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
@@ -55,4 +51,71 @@ h1 {
   background-color: black;
   padding: 2rem 3rem;
   pad
+}
+
+/*** Navigation Bar ***/
+
+nav {
+  background-color: firebrick;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+nav li {
+  margin: 0.75em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/*** Product Section ***/
+
+.products {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+  display: flex;
+  flex-grow: 1;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  width: 30%;
+}
+
+.product-img {
+  display: flex;
+  border: 4px solid black;
+  border-bottom: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 9rem;
+}
+
+.product-img img {
+  max-width: 8rem;
+}
+
+.product-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white
+}
+
+.product-text h3 {
+  padding: 0.5rem 0;
 }
